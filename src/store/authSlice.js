@@ -20,6 +20,7 @@ const authSlice = createSlice({
     }
 })
 
-export const authStates = (state) => state.auth
+export const authStatus = (state) => state.auth.status
+export const authUserData = (state) => state.auth.userData
 export default authSlice.reducer;
 export const { login, logout } = authSlice.actions
